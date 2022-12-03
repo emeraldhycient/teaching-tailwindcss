@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <link rel="stylesheet/css" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        main {
+            background-image: url(./assets/bg.svg);
+            /* background-position: bottom;
+            background-size: cover; */
+        }
+    </style>
+</head>
+
+<body>
+    <main class="h-[120vh] w-screen py-10 px-20">
+        <nav class="flex justify-between items-center">
+            <img src="./assets/Logo.svg" />
+            <div class="flex items-center">
+                <ul class="flex items-center">
+                    <li class="text-white mx-3">Home</li>
+                    <li class="text-white mx-3">Product</li>
+                    <li class="text-white mx-3">Pricing</li>
+                    <li class="text-white mx-3">Health professional</li>
+                    <li class="text-white mx-4">login</li>
+                </ul>
+                <button type="button" class="border-2 border-white text-white rounded-full px-5 py-2">Get
+                    Started</button>
+            </div>
+        </nav>
+        <section class="h-[80vh] w-full flex justify-center ">
+            <div class="w-[100%] flex items-center justify-between">
+                <div class="w-[44%] ">
+                    <h3 class="text-[40px] text-white font-[700]">Personalized health for you and your family
+                        from
+                        anywhere
+                    </h3>
+                    <div class="flex mt-16">
+                        <input type="text" class="h-12 w-[70%] border-none bg-white rounded-full" />
+                        <button
+                            class="bg-[#1781FF] px-6 py-2 rounded-full h-12 text-white z-10 -ml-16">Subscribe</button>
+                    </div>
+                </div>
+                <div class="w-[46%] flex justify-between items-center">
+                    <img src="./assets/Group 9.svg" class="h" alt="">
+                    <img src="./assets/Group 10.svg" alt="">
+                    <img src="./assets/Group 11.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="grid grid-cols-12 gap-3">
+        <div class="col-span-6 "></div>
+        <div class="col-span-6 -mt-72">
+            <img src="./assets/chat.svg" class="w-[80%] mx-auto" alt="">
+        </div>
+
+    </section>
+</body>
+
+</html>
